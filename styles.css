@@ -1,0 +1,56 @@
+.button {
+    background-color: red;
+    border: 5px solid greenyellow;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: wavy;
+    display: inline-block;
+    font-size: 20px;
+    margin: auto;
+}
+
+.background {
+    background: -webkit-linear-gradient(top, #004200, #006600);
+}
+
+.ingrid {  /*Ho dovuto usare questo metodo, gli altri non hanno funzionato.*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gradient {
+    font-size: 70px;
+    background: -webkit-linear-gradient(right, blue, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.textGradient{
+    font-size: 30px;
+    background: -webkit-linear-gradient(left, green, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.animation {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 5px solid black;
+    position: relative;
+    top: 75%;
+    background-color: red;
+    animation-name: movement;
+    animation-duration: 5s;
+}
+
+@keyframes movement {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0; color: black;}
+    50%  {background-color:blue; left:200px; top:200px; color: white;}
+    75%  {background-color:green; left:0px; top:200px; color: white;}
+    100% {background-color:red; left: 0px; top:0px;}
+}
